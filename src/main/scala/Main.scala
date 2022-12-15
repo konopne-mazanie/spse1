@@ -28,6 +28,8 @@ object Main extends App {
     val limit = 500
   }
 
+
+
   val cards: List[Card] = cardsFile.getLines().map { line =>
     val csvVals = line.split(",")
 
