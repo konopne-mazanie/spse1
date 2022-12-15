@@ -9,6 +9,8 @@ object Main2 extends App {
     }
   }
 
+
+
   trait Sugar {
     val sugarMgs = 1
   }
