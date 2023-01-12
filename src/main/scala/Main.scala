@@ -24,6 +24,8 @@ object Main extends App {
     val cvc: Int,
     val owner: String,
     val credit: Int,
+    val company: String,
+    val companyLogoPath: String,
     val color: String
   ) extends Card {
     val limit = 500
@@ -37,7 +39,7 @@ object Main extends App {
     if (csvVals(0) == "g")
       new GoldCard(csvVals(1).toLong, csvVals(2).toInt, csvVals(3), csvVals(4).toInt)
     else
-      new BlueCard(csvVals(1).toLong, csvVals(2).toInt, csvVals(3), csvVals(4).toInt, "blue")
+      new BlueCard(csvVals(1).toLong, csvVals(2).toInt, csvVals(3), csvVals(3).toInt, "visa", "http://tumblr.com/...", "blue")
   }.toList
 
   println(cards)
